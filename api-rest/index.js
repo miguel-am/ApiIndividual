@@ -8,6 +8,7 @@ const usersRoutes = require ('./routes/userRoutes');
 const habitacionRoutes = require ('./routes/habitacionRoutes');
 const reviewRoutes = require ('./routes/reviewRoutes');
 const authRouter  = require('./routes/authRouter');
+const comRoutes = require('./routes/comRoutes');
 
 
 
@@ -22,7 +23,7 @@ app.use('/users',usersRoutes);
 app.use('/rooms',habitacionRoutes);
 app.use('/auth',authRouter)
 app.use('/reviews',reviewRoutes)
-
+app.use('/communications', comRoutes);
 
 
 const PORT = process.env.PORT || 3000;
